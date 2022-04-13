@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n end the programme. ");
+            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n end the programme. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +24,10 @@ class Program
                 case 3:
                     PrimeNumber p = new PrimeNumber();
                     p.primenumber();
+                    break;
+                case 4:
+                    ReverseNumber r = new ReverseNumber();
+                    r.revese_number();
                     break;
                 
 
