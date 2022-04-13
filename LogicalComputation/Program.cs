@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n end the programme. ");
+            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n end the programme. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,10 +21,14 @@ class Program
                     PerfectNumber n = new PerfectNumber();
                     n.perfectnumber();
                     break;
+                case 3:
+                    PrimeNumber p = new PrimeNumber();
+                    p.primenumber();
+                    break;
                 
 
                 default:
-                    Console.WriteLine("choose a proper number to execute");
+                    Console.WriteLine("choose a proper option to execute");
                     break;
             }
         }
