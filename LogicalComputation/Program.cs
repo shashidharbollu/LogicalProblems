@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n end the programme. ");
+            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n 5.temperature\n end the programme. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,6 +28,9 @@ class Program
                 case 4:
                     ReverseNumber r = new ReverseNumber();
                     r.revese_number();
+                    break;
+                case 5:
+                    temperature.temp_();
                     break;
                 
 
