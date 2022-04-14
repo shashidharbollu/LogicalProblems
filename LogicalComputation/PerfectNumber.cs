@@ -13,7 +13,7 @@ namespace LogicalComputation
             int number, i, rem, sum = 0;
             Console.WriteLine("enter your number: ");
             number = Convert.ToInt32(Console.ReadLine());
-            for (i = 1; i < number; i++)
+            for (i = 1; i < number; i++) //6 5
             {
                 rem = number % i;
                 if (rem == 0)

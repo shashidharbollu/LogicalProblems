@@ -16,9 +16,10 @@ namespace LogicalComputation
             for (int i = 2; i < 10; i++)
             { 
             sum = num1 + num2;
-                Console.WriteLine("  "+sum);
-                num1 = num2;
-                num2 = sum;
+
+                  num1 = num2;
+                  num2 = sum;
+                Console.WriteLine("  " + sum);
             }
 
         }
