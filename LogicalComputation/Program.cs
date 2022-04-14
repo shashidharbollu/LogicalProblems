@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n 5.temperature\n 6.dayofweek\n end the programme. ");
+            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n 5.temperature\n 6.dayofweek\n 7.monthlypayment\n end the programme. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -35,6 +35,10 @@ class Program
                 case 6: 
                     dayofweek week = new dayofweek();
                     week.dayofweekk();
+                    break;
+                case 7:
+                    monthlypayment montly = new monthlypayment();
+                    montly.monthly_payment();
                     break;
                 
 
