@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n 5.temperature\n 6.dayofweek\n 7.monthlypayment\n 8.vendingmachine\n  end the programme. ");
+            Console.WriteLine("1.fibonacciseries\n 2.perfectnumber\n 3.primenumber\n 4.reversesumber\n 5.temperature\n 6.dayofweek\n 7.monthlypayment\n 8.vendingmachine\n 9.stopwatch\n 10.Coupan\n end the programme. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -44,7 +44,15 @@ class Program
                     VendingMachine vending = new VendingMachine();
                     vending.vending_machine();
                     break;
-                
+                case 9:
+                    stopwatch stop = new stopwatch();
+                    stop.Measure();
+                    break;
+                case 10:
+                    Coupon c = new Coupon();
+                    c.PrintCouponNumber();
+                    break;
+
 
                 default:
                     Console.WriteLine("choose a proper option to execute");
